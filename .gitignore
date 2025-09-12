@@ -1,0 +1,35 @@
+#Byte-compiled / cach
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtualenvs
+venv/
+.venv/
+
+# Django stuff
+*.log
+staticfiles/
+media/
+
+# SQLite (usually don't commit your local dev DB)
+db.sqlite3
+
+# Env files and secrets
+.env
+*.env
+
+# Tools & caches
+.idea/
+.vscode/
+.mypy_cache/
+.pytest_cache/
+.coverage
+.vscode/
+.mypy_cache/
+.coverage
+htmlcov/
+coverage.xml
+.DS_Store
