@@ -1,17 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>About Page</title>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="p-3">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-6 mx-auto mb-3">
+        <h2>About</h2>
+        <hr />
+        <p>
+           GameSwap was built for gamers who believe physical games still matter. We know the frustration of trade-ins that pay pennies on the dollar and the risks of online marketplaces where trust can be hard to come by. That’s why we created GameSwap—a secure, community-driven marketplace designed to bring the power back to players.
 
+On GameSwap, you can buy, sell, and trade your games directly with verified vendors across the country. Every transaction is protected by our built-in escrow system, ensuring that both buyer and seller get exactly what they agreed on. No scams, no headaches—just fair, safe trades.
+        </p>
+        <p>
+          Whether you’re hunting for a classic title, trying to fund your next purchase, or simply want to swap with someone who gets it, GameSwap makes it easy. Our goal is simple: keep gaming affordable, accessible, and fun by creating the marketplace we always wished existed.
 
-</head>
-
-<body>
-    <h1>Welcome to the About Page</h1>
-</body>
-
-
-
-
-
-</html>
+GameSwap isn’t just about exchanging discs or cartridges—it’s about building a gamer-first economy where everyone wins.
+        </p>
+      </div>
+      <div class="col-md-6 mx-auto mb-3 text-center">
+        <img src="{% static 'img/about.jpg' %}"
+             class="max-width-100"
+             alt="about" />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
