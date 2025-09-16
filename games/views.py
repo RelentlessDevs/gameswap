@@ -8,7 +8,7 @@ games = [
     {
         'id': 2, 'name': 'PUBG', 'price': 25,
         'description': 'Battle royale and
-        the battle for resources.'
+        the battle fo resources.'
     },
     {
         'id': 3, 'name': 'The Dark Knight', 'price': 14,
@@ -22,7 +22,7 @@ games = [
 def index(request):
     template_data = {}
     template_data['title'] = 'Games'
-    template_data['movies'] = games
+    template_data['games'] = games
     return render(request, 'games/index.html',
                   {'template_data': template_data})
 
